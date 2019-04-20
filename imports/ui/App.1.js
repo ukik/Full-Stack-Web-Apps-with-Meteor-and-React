@@ -9,14 +9,12 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <TitleBar title={this.props.title} subtitle={'Created by Muhamad Duki'}/>
-        <div className="wrapper">
-          <PlayerList players={this.props.players}/>
-          <AddPlayer score={100}>
-            <h1>Test</h1>
-            <p>something else</p>
-          </AddPlayer>
-        </div>
+        <TitleBar title={this.props.title} subtitle={'Yeah'}/>
+        {/* <p>Hello { name }</p> */}
+        {/* <p>This is my second p.</p> */}
+        {/* { renderPlayers(players) } */}
+        <PlayerList players={this.props.players}/>
+        <AddPlayer score={100}/>
       </div>
     )
   }
